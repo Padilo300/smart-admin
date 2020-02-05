@@ -1,0 +1,32 @@
+.customNav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.customNav li{
+    margin: 0 5px ;
+}
+
+.customNav > li{
+    position: relative;
+}
+
+.customNav > li > ul{
+    list-style: none;
+    position: absolute;
+    z-index: 99;
+    background: #fff;
+    min-width: 100%;
+    max-width: max-content;
+    border-radius: 4px;
+    box-shadow: 5px 12px 20px 0px #ccc;
+    opacity: 0;
+    transition: all 0.4s;
+    padding: 20px;
+    text-wrap: nowrap;
+}
+
+.customNav > li:hover > ul{
+    opacity: 1;
+}
